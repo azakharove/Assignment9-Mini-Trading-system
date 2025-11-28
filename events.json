@@ -1,0 +1,110 @@
+[
+  {
+    "timestamp": "2025-11-28T10:55:40.072259",
+    "event_type": "OrderCreated",
+    "data": {
+      "8": "FIX.4.2",
+      "35": "D",
+      "55": "AAPL",
+      "54": "1",
+      "38": "500",
+      "40": "2",
+      "10": "128"
+    }
+  },
+  {
+    "timestamp": "2025-11-28T10:55:40.072300",
+    "event_type": "OrderFilled",
+    "data": {
+      "symbol": "AAPL",
+      "qty": 500,
+      "side": "1"
+    }
+  },
+  {
+    "timestamp": "2025-11-28T10:55:40.072309",
+    "event_type": "OrderCreated",
+    "data": {
+      "8": "FIX.4.2",
+      "35": "D",
+      "55": "AAPL",
+      "54": "1",
+      "38": "800",
+      "40": "2",
+      "10": "129"
+    }
+  },
+  {
+    "timestamp": "2025-11-28T10:55:40.072319",
+    "event_type": "OrderFilled",
+    "data": {
+      "symbol": "AAPL",
+      "qty": 800,
+      "side": "1"
+    }
+  },
+  {
+    "timestamp": "2025-11-28T10:55:40.072325",
+    "event_type": "OrderCreated",
+    "data": {
+      "8": "FIX.4.2",
+      "35": "D",
+      "55": "MSFT",
+      "54": "2",
+      "38": "300",
+      "40": "2",
+      "10": "130"
+    }
+  },
+  {
+    "timestamp": "2025-11-28T10:55:40.072335",
+    "event_type": "OrderFilled",
+    "data": {
+      "symbol": "MSFT",
+      "qty": 300,
+      "side": "2"
+    }
+  },
+  {
+    "timestamp": "2025-11-28T10:55:40.072341",
+    "event_type": "OrderCreated",
+    "data": {
+      "8": "FIX.4.2",
+      "35": "D",
+      "55": "GOOGL",
+      "54": "1",
+      "38": "1500",
+      "40": "2",
+      "10": "131"
+    }
+  },
+  {
+    "timestamp": "2025-11-28T10:55:40.072350",
+    "event_type": "OrderRejected",
+    "data": {
+      "symbol": "GOOGL",
+      "reason": "Order size 1500 exceeds max 1000"
+    }
+  },
+  {
+    "timestamp": "2025-11-28T10:55:40.072356",
+    "event_type": "OrderCreated",
+    "data": {
+      "8": "FIX.4.2",
+      "35": "D",
+      "55": "AAPL",
+      "54": "1",
+      "38": "900",
+      "40": "2",
+      "10": "132"
+    }
+  },
+  {
+    "timestamp": "2025-11-28T10:55:40.072396",
+    "event_type": "OrderRejected",
+    "data": {
+      "symbol": "AAPL",
+      "reason": "Position 2200 would exceed max 2000 for AAPL"
+    }
+  }
+]
