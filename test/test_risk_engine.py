@@ -1,4 +1,3 @@
-"""Tests for Risk Engine."""
 
 from order import Order
 from risk_engine import RiskEngine
@@ -70,14 +69,3 @@ def test_multiple_symbols():
     
     assert risk.positions['AAPL'] == 500
     assert risk.positions['MSFT'] == -300
-
-
-if __name__ == '__main__':
-    test_order_within_limits()
-    test_order_exceeds_size_limit()
-    test_position_update_buy()
-    test_position_update_sell()
-    test_position_limit_exceeded()
-    test_multiple_symbols()
-    print("All Risk Engine tests passed!")
-

@@ -1,5 +1,3 @@
-"""Tests for Order class and state transitions."""
-
 from order import Order, OrderState
 
 
@@ -47,14 +45,4 @@ def test_invalid_transition():
     order = Order('AAPL', 100, '1')
     order.transition(OrderState.FILLED)  # Can't go from NEW to FILLED
     assert order.state == OrderState.NEW
-
-
-if __name__ == '__main__':
-    test_order_creation()
-    test_valid_transition_new_to_acked()
-    test_valid_transition_new_to_rejected()
-    test_valid_transition_acked_to_filled()
-    test_valid_transition_acked_to_canceled()
-    test_invalid_transition()
-    print("All Order tests passed!")
 

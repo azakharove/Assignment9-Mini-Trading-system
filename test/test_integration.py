@@ -1,5 +1,3 @@
-"""Integration tests for the complete system."""
-
 import os
 from fix_parser import FixParser
 from order import Order, OrderState
@@ -104,11 +102,4 @@ def test_multiple_orders_with_logging():
     # Cleanup
     if os.path.exists(test_file):
         os.remove(test_file)
-
-
-if __name__ == '__main__':
-    test_successful_order_flow()
-    test_rejected_order_flow()
-    test_multiple_orders_with_logging()
-    print("All integration tests passed!")
 

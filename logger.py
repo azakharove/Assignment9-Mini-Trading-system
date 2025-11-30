@@ -1,4 +1,3 @@
-# logger.py
 from datetime import datetime
 import json
 

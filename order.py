@@ -1,4 +1,3 @@
-# order.py
 from enum import Enum, auto
 
 class OrderState(Enum):

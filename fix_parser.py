@@ -1,4 +1,3 @@
-# fix_parser.py
 class FixParser:
     """Parse FIX protocol messages into structured dictionaries."""
     

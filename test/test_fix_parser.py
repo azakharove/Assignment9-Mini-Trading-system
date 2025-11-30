@@ -1,6 +1,3 @@
-"""Tests for FIX message parser."""
-
-import unittest
 from fix_parser import FixParser
 
 
@@ -49,12 +46,4 @@ def test_parse_missing_quantity():
         assert False, "Should have raised ValueError"
     except ValueError as e:
         assert 'OrderQty' in str(e)
-
-
-if __name__ == '__main__':
-    test_parse_valid_message()
-    test_parse_missing_symbol()
-    test_parse_missing_side()
-    test_parse_missing_quantity()
-    print("All FIX parser tests passed!")
 

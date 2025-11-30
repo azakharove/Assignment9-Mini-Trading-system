@@ -1,5 +1,3 @@
-"""Tests for Logger functionality."""
-
 import json
 import os
 from logger import Logger
@@ -50,12 +48,4 @@ def test_timestamp_in_events():
     logger.log("TestEvent", {"key": "value"})
     
     assert 'timestamp' in logger.events[0]
-
-
-if __name__ == '__main__':
-    test_log_event()
-    test_log_multiple_events()
-    test_save_to_file()
-    test_timestamp_in_events()
-    print("All Logger tests passed!")
 
